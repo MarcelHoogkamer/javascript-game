@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ROCK-PAPER-SCISSORS-LIZARD-SPOCK</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+<div class="container">
+    <h1 class="ml1">
+    <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">ROCK-PAPER-SCISSORS-LIZARD-SPOCK</span>
+    <span class="line line2"></span>
+  </span>
+    </h1>
+    <p class="rulebook">The rules of this game are very simple:<br></p>
+    <table class="table">
+        <tr>
+            <td>Paper covers Rock</td>
+            <td>Rock crushes Lizard</td>
+            <td>Lizard poisons Spock</td>
+            <td>Spock smashes Scissors</td>
+            <td>Scissors decapitate Lizard</td>
+            <td>Scissors cut Paper</td>
+            <td>Lizard eats Paper</td>
+            <td>Paper disproves Spock</td>
+            <td>Spock vaporizes Rock</td>
+            <td>Rock crushes Scissors</td>
+        </tr>
+    </table>
+
+        <h2>Computer's Choice:</h2>
+        <h2 id="computer-choice"></h2>
+
+        <h2>Your Choice:</h2>
+        <h2 id="user-choice"></h2>
+
+        <h2>Results:</h2>
+        <h2 id="result"></h2>
+
+        <button class="choices" id="rock">rock</button>
+        <button class="choices" id="paper">paper</button>
+        <button class="choices" id="scissors">scissors</button>
+        <button class="choices" id="lizard">lizard</button>
+        <button class="choices" id="spock">spock</button><br><br>
+        <div class="reset"><button id="reset"><span>RESET</span></button></div>
+
+    <section class="two container-fluid">
+        <h1 class="result">Let's keep track:</h1>
+            <div class="Player">
+                <h3>Player</h3>
+                <h5 class="text-center">0</h5>
+            </div>
+            <div class="Computer">
+                <h3>Computer</h3>
+                <h5 class="text-center">0</h5>
+        </div>
+    </section>
+
+</div>
+
+<script src="./game.js"></script>
+</body>
+
+</html>
